@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Battito ECG con sfumatura corallo-viola su fondo indaco; margini ampi per l'icona "maskable" -->
+  <defs>
+    <radialGradient id="alone" cx="50%" cy="52%" r="55%">
+      <stop offset="0" stop-color="#4B33C8" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#0B0820" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linea" x1="96" y1="0" x2="416" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF3D63"/>
+      <stop offset=".55" stop-color="#B14BE0"/>
+      <stop offset="1" stop-color="#6C47FF"/>
+    </linearGradient>
+    <filter id="bagliore" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="512" height="512" fill="#0B0820"/>
+  <rect width="512" height="512" fill="url(#alone)"/>
+  <polyline points="96,290 170,290 194,256 218,290 248,290 272,150 302,374 326,290 358,290 382,248 406,290 416,290"
+    fill="none" stroke="url(#linea)" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" filter="url(#bagliore)" opacity=".75"/>
+  <polyline points="96,290 170,290 194,256 218,290 248,290 272,150 302,374 326,290 358,290 382,248 406,290 416,290"
+    fill="none" stroke="url(#linea)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="272" cy="150" r="9" fill="#FFFFFF"/>
+</svg>
